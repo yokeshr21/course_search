@@ -134,7 +134,7 @@ http://localhost:8080/api/search
 Search by keyword (title + description):
 
 ```bash
-curl.exe "http://localhost:8080/api/search?query=math"
+curl.exe "http://localhost:8080/api/search?q=Creative"
 ```
 
 ---
@@ -228,7 +228,7 @@ Autocomplete suggestions based on course title.
 Example:
 
 ```bash
-curl.exe "http://localhost:8080/api/search/autocomplete?prefix=mat"
+curl.exe "http://localhost:8080/api/search/suggest?q=adv"
 ```
 
 Sample response:
@@ -251,7 +251,7 @@ You can also test all endpoints using Postman:
 2. Create a new GET request
 3. Enter the URL:
    ```
-   http://localhost:8080/api/search?query=math
+   http://localhost:8080/api/search?q=creative
    ```
 4. Click **Send**
 
