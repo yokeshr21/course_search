@@ -110,7 +110,7 @@ When the application starts:
 You can verify the indexed data:
 
 ```bash
-curl http://localhost:9200/courses/_search?pretty
+curl.exe http://localhost:9200/courses/_search?pretty
 ```
 
 You should see multiple course documents returned in the response.
@@ -134,7 +134,7 @@ http://localhost:8080/api/search
 Search by keyword (title + description):
 
 ```bash
-curl "http://localhost:8080/api/search?query=math"
+curl.exe "http://localhost:8080/api/search?query=math"
 ```
 
 ---
@@ -142,7 +142,7 @@ curl "http://localhost:8080/api/search?query=math"
 ### 2️⃣ Filter by Category
 
 ```bash
-curl "http://localhost:8080/api/search?category=Science"
+curl.exe "http://localhost:8080/api/search?category=Science"
 ```
 
 ---
@@ -150,7 +150,7 @@ curl "http://localhost:8080/api/search?category=Science"
 ### 3️⃣ Filter by Type
 
 ```bash
-curl "http://localhost:8080/api/search?type=COURSE"
+curl.exe "http://localhost:8080/api/search?type=COURSE"
 ```
 
 ---
@@ -158,7 +158,7 @@ curl "http://localhost:8080/api/search?type=COURSE"
 ### 4️⃣ Price Range Filter
 
 ```bash
-curl "http://localhost:8080/api/search?minPrice=40&maxPrice=80"
+curl.exe "http://localhost:8080/api/search?minPrice=40&maxPrice=80"
 ```
 
 ---
@@ -166,7 +166,7 @@ curl "http://localhost:8080/api/search?minPrice=40&maxPrice=80"
 ### 5️⃣ Age Range Filter
 
 ```bash
-curl "http://localhost:8080/api/search?minAge=8&maxAge=12"
+curl.exe "http://localhost:8080/api/search?minAge=8&maxAge=12"
 ```
 
 ---
@@ -174,7 +174,7 @@ curl "http://localhost:8080/api/search?minAge=8&maxAge=12"
 ### 6️⃣ Date Range Filter
 
 ```bash
-curl "http://localhost:8080/api/search?startDate=2025-06-01&endDate=2025-07-30"
+curl.exe "http://localhost:8080/api/search?startDate=2025-06-01&endDate=2025-07-30"
 ```
 
 ---
@@ -184,13 +184,13 @@ curl "http://localhost:8080/api/search?startDate=2025-06-01&endDate=2025-07-30"
 Sort by price (ascending):
 
 ```bash
-curl "http://localhost:8080/api/search?sortBy=price&direction=asc"
+curl.exe "http://localhost:8080/api/search?sortBy=price&direction=asc"
 ```
 
 Sort by start date (descending):
 
 ```bash
-curl "http://localhost:8080/api/search?sortBy=startDate&direction=desc"
+curl.exe "http://localhost:8080/api/search?sortBy=startDate&direction=desc"
 ```
 
 ---
@@ -198,7 +198,7 @@ curl "http://localhost:8080/api/search?sortBy=startDate&direction=desc"
 ### 8️⃣ Pagination
 
 ```bash
-curl "http://localhost:8080/api/search?page=0&size=5"
+curl.exe "http://localhost:8080/api/search?page=0&size=5"
 ```
 
 <br/>
@@ -214,7 +214,7 @@ Supports typo-tolerant search using Elasticsearch fuzziness.
 Example:
 
 ```bash
-curl "http://localhost:8080/api/search?query=scince"
+curl.exe "http://localhost:8080/api/search?query=scince"
 ```
 
 Even though "science" is misspelled, relevant results will still be returned.
@@ -228,7 +228,7 @@ Autocomplete suggestions based on course title.
 Example:
 
 ```bash
-curl "http://localhost:8080/api/search/autocomplete?prefix=mat"
+curl.exe "http://localhost:8080/api/search/autocomplete?prefix=mat"
 ```
 
 Sample response:
